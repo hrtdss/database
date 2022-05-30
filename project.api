@@ -1,0 +1,91 @@
+# database.h
+!database.cpp array cctype cerrno clocale cstdint cstdio cstdlib ctime ctype.h cwchar cwctype database.h errno.h exception fstream initializer_list iomanip ios iosfwd iostream istream limits limits.h locale locale.h new ostream signal.h sstream stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error time.h tuple type_traits typeinfo utility wchar.h wctype.h #<#>
+!database.h array cctype cerrno clocale cstdint cstdio cstdlib ctime ctype.h cwchar cwctype errno.h exception fstream initializer_list iomanip ios iosfwd iostream istream limits limits.h locale locale.h new ostream signal.h sstream stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error time.h tuple type_traits typeinfo utility wchar.h wctype.h #<#>
+!main.cpp array cctype cerrno clocale cstdint cstdio cstdlib ctime ctype.h cwchar cwctype database.h errno.h exception fstream initializer_list iomanip ios iosfwd iostream istream limits limits.h locale locale.h new ostream signal.h sstream stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error time.h tuple type_traits typeinfo utility wchar.h wctype.h #<#>
+DataBase _type_ #<database.h>
+DataBase(string name) #<database.h>
+Person _type_ #<database.h>
+Person(string name) #<database.h>
+dbError : struct alreadyApplied: #<database.h>
+dbError : struct editingImpossible: #<database.h>
+dbError _type_ #<database.h>
+dbError() -> virtual~ #<database.h>
+main() -> int #<main.cpp>
+	DataBase:%dbName : string #<database.h>
+	DataBase:%inOut : fstream #<database.h>
+	DataBase:%editMode : bool #<database.h>
+	DataBase:%amountOfNotes : int #<database.h>
+	DataBase:%currentId : long #<database.h>
+	DataBase:%first : int #<database.h>
+	DataBase:%last : int #<database.h>
+	DataBase:%next : int #<database.h>
+	DataBase:%prev : int #<database.h>
+	DataBase:%recordSize : int #<database.h>
+	DataBase:%firstByte : int #<database.h>
+	DataBase:%firstEmpty : int #<database.h>
+	DataBase:%ReadData : virtual void #<database.h>
+	DataBase:%WriteData : virtual void #<database.h>
+	DataBase:%Size() -> virtual int #<database.h>
+	DataBase::Open() -> void #<database.h>
+	DataBase::Close() -> void #<database.h>
+	DataBase::Id() -> long #<database.h>
+	DataBase::Goto(long id) -> void #<database.h>
+	DataBase::First() -> void #<database.h>
+	DataBase::Next() -> void #<database.h>
+	DataBase::Prev() -> void #<database.h>
+	DataBase::Last() -> void #<database.h>
+	DataBase::Post() -> void #<database.h>
+	DataBase::Cancel() -> void #<database.h>
+	DataBase::Insert() -> void #<database.h>
+	DataBase::Edit() -> void #<database.h>
+	DataBase::Delete() -> void #<database.h>
+	DataBase::Eof() -> bool #<database.h>
+	DataBase::Bof() -> bool #<database.h>
+	DataBase::count() -> long #<database.h>
+	Person:%fullName : string[] #<database.h>
+	Person:%country : string #<database.h>
+	Person:%dayOfBirth : int #<database.h>
+	Person:%monthOfBirth : int #<database.h>
+	Person:%yearOfBirth : int #<database.h>
+	Person:%ReadData : void #<database.h>
+	Person:%WriteData : void #<database.h>
+	Person:%Size() -> int #<database.h>
+	Person:%amountOfNotes : int #<database.h>
+	Person:%currentId : long #<database.h>
+	Person:%first : int #<database.h>
+	Person:%last : int #<database.h>
+	Person:%next : int #<database.h>
+	Person:%prev : int #<database.h>
+	Person:%recordSize : int #<database.h>
+	Person:%firstByte : int #<database.h>
+	Person:%firstEmpty : int #<database.h>
+	Person:%ReadData : virtual void #<database.h>
+	Person:%WriteData : virtual void #<database.h>
+	Person:%Size() -> virtual int #<database.h>
+	Person::setLastName(const string& a) -> void #<database.h>
+	Person::setFirstName(const string& a) -> void #<database.h>
+	Person::setMiddleName(const string& a) -> void #<database.h>
+	Person::setCountry(const string& a) -> void #<database.h>
+	Person::setDateOfBirth(const int a, const int b, const int c) -> void #<database.h>
+	Person::Open() -> void #<database.h>
+	Person::Close() -> void #<database.h>
+	Person::Id() -> long #<database.h>
+	Person::Goto(long id) -> void #<database.h>
+	Person::First() -> void #<database.h>
+	Person::Next() -> void #<database.h>
+	Person::Prev() -> void #<database.h>
+	Person::Last() -> void #<database.h>
+	Person::Post() -> void #<database.h>
+	Person::Cancel() -> void #<database.h>
+	Person::Insert() -> void #<database.h>
+	Person::Edit() -> void #<database.h>
+	Person::Delete() -> void #<database.h>
+	Person::Eof() -> bool #<database.h>
+	Person::Bof() -> bool #<database.h>
+	Person::count() -> long #<database.h>
+	Person=:getLastName() -> string #<database.h>
+	Person=:getFirstName() -> string #<database.h>
+	Person=:getMiddleName() -> string #<database.h>
+	Person=:getCountry() -> string #<database.h>
+	Person=:getDateOfBirth() -> string #<database.h>
+	dbError=:what() -> virtual const char* #<database.h>
